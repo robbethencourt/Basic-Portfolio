@@ -10,6 +10,16 @@ p {
 	color: #777;
 }
 
+a, a:visited {
+	color: #4aaaa5;
+	transition: 0.35s;
+}
+
+a:hover, a:visited {
+	color: #fd6e72;
+	transition: 0.35s;
+}
+
 h1, h2, h3, h4 {
 	font-family: 'Georgia', Times, Times New Roman, serif;	
 }
@@ -49,6 +59,11 @@ input[type="button"] {
 	padding: 10px 25px;
 	border: none;
 	color: #fff;
+}
+
+input[type="button"]:hover, input[type="button"]:focus {
+	cursor: pointer;
+	background: #fd6e72;
 }
 
 
@@ -94,6 +109,10 @@ header {
 				color: #ccc;
 			}
 
+			.main-nav a:hover, .main-nav a:focus {
+				color: #fd6e72;
+			}
+
 .content {
 	padding: 2em;
 	overflow: hidden;
@@ -101,9 +120,10 @@ header {
 
 section {
 	float: left;
-	width: 590px;
+	width: 588px;
 	margin: 0 40px 0 0;
 	padding: 20px 30px 30px 30px;
+	border: 1px solid #ddd;
 	background: #fff;
 }
 
@@ -132,6 +152,12 @@ section {
 			color: #fff;
 			text-align: center;
 			background: #4aaaa5;
+			transition: 0.35s;
+		}
+
+		.p-gallery a:hover h4, .p-gallery a:focus h4 {
+			background: #fd6e72;
+			transition: 0.35s;
 		}
 
 		.p-gallery img {
@@ -140,8 +166,9 @@ section {
 
 aside {
 	float: left;
-	width: 190px;
+	width: 188px;
 	padding: 20px 40px;
+	border: 1px solid #ddd;
 	background: #fff;
 }
 
