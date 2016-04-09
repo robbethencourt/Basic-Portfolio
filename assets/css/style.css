@@ -114,7 +114,7 @@ header {
 			}
 
 .content {
-	padding: 2em;
+	padding: 2em 0;
 	overflow: hidden;
 }
 
@@ -185,6 +185,11 @@ aside {
 			margin-right: 0;
 		}
 
+		.sm-nav li:hover img {
+			transition: 0.3s;
+			transform: rotate(360deg);
+		}
+
 footer {
 	padding: 60px 0 0 0;
 	text-align: center;
@@ -221,3 +226,165 @@ Sticky Footer by Ryan Fait
 http://ryanfait.com/
 
 */
+
+
+/* Media Queries */
+
+@media screen and (max-width: 980px) {
+	
+	header {
+		padding: 0;
+	}
+
+	.container {
+		width: 80%;
+	}
+
+	section {
+		width: 60%;
+		margin: 0 5% 0 0;
+		padding: 20px 2.5% 30px 2.5%;
+	}
+
+	section .ppic {
+		width: 100%;
+		padding: 0 0 1em 0;
+	}
+
+	.p-gallery li {
+		float: none;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.p-gallery li:nth-of-type(odd) {
+		margin-right: 6%;
+	}
+
+	aside {
+		width: 24%;
+		padding: 20px 2.5%;
+	}
+
+		.sm-nav li {
+			width: 30%;
+			margin-right: 5%;
+		}
+
+		.sm-nav li:last-of-type {
+			margin-right: 0;
+		}
+
+			.sm-nav img {
+				max-width: 100%;
+				margin-right: 0;
+			}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.container {
+		width: 90%;
+	}
+	
+	section {
+		width: 90%;
+		margin: 0 0 30px 0;
+		padding: 20px 5% 30px 5%;
+	}
+
+		section .ppic {
+			float: left;
+			width: 50%;
+			padding: 0 1em 1em 0;
+		}
+
+		.p-gallery li {
+			float: left;
+			width: 47%;
+			margin-bottom: 30px;
+		}
+
+	.p-gallery li:nth-of-type(odd) {
+		margin-right: 6%;
+	}
+
+	aside {
+		width: 90%;
+		padding: 20px 5%;
+	}
+
+		.sm-nav {
+			width: 30%;
+		}
+
+}
+
+@media screen and (max-width: 640px) {
+
+	.container {
+		width: 100%;
+	}
+
+	header {
+		position: static;
+	}
+
+		header .logo {
+			float: none;
+			width: 90%;
+			padding: 0.75em 5%;
+			margin: 0;
+			color: #fff;
+			text-align: center;
+			background: #4aaaa5;
+		}
+
+		nav {
+			float: none;
+			position: static;
+			padding: 0 0 1.75em 0;
+			background: #fff;
+		}
+
+			.main-nav li {
+				float: left;
+				width: 23.3%;
+				margin: 0em;
+				padding: 1.5em 5%;
+				text-align: center;
+			}
+
+		section {
+			width: 80%;
+			margin: 0 5% 30px 5%;
+			padding: 20px 5% 30px 5%;
+		}
+
+			section .ppic {
+				width: 100%;
+				padding: 0 0 1em 0;
+			}
+
+			.p-gallery li {
+				float: none;
+				width: 100%;
+				margin-bottom: 30px;
+			}
+
+			.p-gallery li:nth-of-type(odd) {
+				margin-right: 6%;
+			}
+
+				.p-gallery img {
+					width: 100%;
+				}
+
+		aside {
+			width: 80%;
+			margin: 0 5%;
+			padding: 20px 5%;
+		}
+	
+}
