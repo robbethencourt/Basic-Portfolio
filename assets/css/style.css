@@ -261,6 +261,10 @@ http://ryanfait.com/
 		margin-right: 6%;
 	}
 
+		.p-gallery img {
+			width: 100%;
+		}
+
 	aside {
 		width: 24%;
 		padding: 20px 2.5%;
